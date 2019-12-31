@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+</head>
+
+
+<body>
+
+<h2>Calculator</h2>
+
+<form th:action="@{device}" th:object="${device}" method="post">
+
+    <p>Provide the device's name: <input type="text" th:field="*{name}"/></p>
+    <p>Provide the device's power: <input type="text" th:field="*{power}"/> Watts. </p>
+    <p>Submit: <input type="submit" value="  Enter  "></p>
+
+
+</form>
+
+</body>
+</html>

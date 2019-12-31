@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Power Form </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+</head>
+<body>
+
+<h3>Device's cost's report</h3>
+
+<p th:text = " 'Name: ' + ${device.name}" />
+<p th:text = " 'Power: ' + ${device.power}" />
+<p th:text = " 'Price per hour: ' + ${device.priceForHour} + ' PLN'" />
+<p th:text = " 'Price per day: ' + ${device.priceForOneDay} + ' PLN'" />
+
+<a href="/device"> Return to the previous page </a>
+
+</body>
+</html>
